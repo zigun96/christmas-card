@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+<head>
+    <title>Christmas-card</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        rel="shortcut icon"
+        href="https://e7.pngegg.com/pngimages/651/42/png-clipart-computer-icons-heart-favicon-love-symbols-love-color-pencil.png"
+        />
+        <meta
+            property="og:image"
+            content="https://www.kindpng.com/picc/m/5-50664_happy-new-year-clipart-colorful-happy-new-year.png"
+            />
+            <meta property="og:title" content="다들 보시오" />
+            <meta property="og:description" content="Good Bye 2022"/>
+</head>
+<style>
+    * {}
+
+    body {
+        background-color: #9b070f
+    }
+
+    .messagebox {
+        background-color: wheat;
+
+        width: 400px;
+        margin: auto;
+
+        color: brown;
+
+        padding: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        box-shadow: 0px 0px 10px 0px white;
+    }
+
+    .envelope {
+        width: 300px;
+        height: 200px;
+
+        background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+        background-size: cover;
+        background-position: center;
+
+        margin: 200px auto 0px auto;
+        cursor: pointer;
+    }
+
+    .envelope-msg {
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(4, 163, 57);
+        ;
+    }
+
+    .mouse {
+        backgorund-color: white;
+
+        width: 200px;
+        height: 200px;
+
+        background-image: url("https://media4.giphy.com/media/fwD6g7IsH2J0LnzlIy/giphy.gif?cid=ecf05e4771gv92ybd3e6tbyw6mg2p9gfh999taefrmgzgpo4&rid=giphy.gif&ct=g");
+        background-size: cover;
+        background-position: center;
+        border-radius: 100px;
+
+        margin: 100px auto 0px auto;
+        border: 5px solid white;
+        box-shadow: 0px 0px 10px 0px white;
+    }
+    .letter-open {
+        display: none;
+    }
+
+    @media screen and (max-width: 760px) {
+        .messagebox {
+            width: 300px;
+            padding: 20px;
+        }
+
+        .mouse {
+            width: 150px;
+            height: 150px;
+            margin: 70px auto 0px auto;
+        }
+
+        .envelope {
+            margin: 150px auto 0px auto;
+        }
+    }
+</style>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope"></div>
+        <h2 class="envelope-msg">편지 절대 누르지마 !</h2>
+    </div>
+    <div class="letter-open">
+        <div class="mouse" onclick="go_jae()"></div>
+        <h1>메리-크리스마스-!</h1>
+        <div class="messagebox">
+            To 소중한 나의 친구<br>
+            <br>
+            발로란트 들어와<br>
+            <br>
+            <br>
+            <br>
+            <p class="from">From 재건님</p>
+        </div>
+    </div>
+    <script>
+        const letterClose = document.querySelector(".letter-close");
+        const letterOpen = document.querySelector(".letter-open");
+        letterClose.onclick = () => {
+            letterClose.style.display = "none";
+            letterOpen.style.display = "block";
+        };
+        function go_jae() {
+            alert('어캐 찾았누');
+            window.location.href = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxpP9og8MzXStuy0hN0JJBqiCW2hh6UN2RAg&usqp=CAU';
+        }
+    </script>
+</body>
