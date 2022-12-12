@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
 <head>
     <title>Christmas-card</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-        rel="shortcut icon"
-        href="https://e7.pngegg.com/pngimages/651/42/png-clipart-computer-icons-heart-favicon-love-symbols-love-color-pencil.png"
-        />
-        <meta
-            property="og:image"
-            content="https://www.kindpng.com/picc/m/5-50664_happy-new-year-clipart-colorful-happy-new-year.png"
-            />
-            <meta property="og:title" content="다들 보시오" />
-            <meta property="og:description" content="Good Bye 2022"/>
+    <link rel="shortcut icon"
+        href="https://www.kindpng.com/imgv/bRhR_christmas-tree-images-png-transparent-png/" />
+    <meta property="og:image"
+        content="https://www.kindpng.com/imgv/bRhR_christmas-tree-images-png-transparent-png/" />
+    <meta property="og:title" content="Merry Christmas" />
+    <meta property="og:description" content="행복한 크리스마스" />
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <style>
-    * {}
+    /* 폰트 바꿀것! */
+    @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+    * {
+        font-family: 'Gamja Flower', cursive;
+    }
 
     body {
         background-color: #9b070f
@@ -44,13 +46,14 @@
         background-size: cover;
         background-position: center;
 
-        margin: 200px auto 0px auto;
+        margin: 0px auto 0px auto;
         cursor: pointer;
     }
 
     .envelope-msg {
+        font-size: 35px;
         text-align: center;
-        color: white;
+        color: rgb(14, 100, 25);
     }
 
     h1 {
@@ -60,7 +63,7 @@
     }
 
     .mouse {
-        backgorund-color: white;
+        background-color: white;
 
         width: 200px;
         height: 200px;
@@ -70,11 +73,17 @@
         background-position: center;
         border-radius: 100px;
 
-        margin: 100px auto 0px auto;
+        margin: 0 auto;
         border: 5px solid white;
         box-shadow: 0px 0px 10px 0px white;
     }
+
+    .letter-close {
+        padding-top : 300px;
+    }
+
     .letter-open {
+        padding-top : 200px;
         display: none;
     }
 
@@ -97,9 +106,16 @@
 </style>
 
 <body>
+    <script>
+        for( let i = 0; i < 200; i++) {
+            const snow = document.createElement('div');
+            snow.setAttribute('class','snow');
+            document.body.append(snow);
+        }
+    </script>
     <div class="letter-close">
         <div class="envelope"></div>
-        <h2 class="envelope-msg">편지 절대 누르지마 !</h2>
+        <h2 class="envelope-msg">Merry - Christmas !</h2>
     </div>
     <div class="letter-open">
         <div class="mouse" onclick="go_jae()"></div>
@@ -115,6 +131,7 @@
         </div>
     </div>
     <script>
+        
         const letterClose = document.querySelector(".letter-close");
         const letterOpen = document.querySelector(".letter-open");
         letterClose.onclick = () => {
