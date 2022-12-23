@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <style>
-    /* 폰트 바꿀것! */
     @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 
     * {
@@ -53,7 +52,7 @@
     .envelope-msg {
         font-size: 35px;
         text-align: center;
-        color: rgb(14, 100, 25);
+        color: rgb(220, 233, 36);
     }
 
     h1 {
@@ -86,21 +85,24 @@
         padding-top : 200px;
         display: none;
     }
+    .from {
+        text-align : right;
+    }
 
     @media screen and (max-width: 760px) {
         .messagebox {
-            width: 300px;
-            padding: 20px;
+            width: 250px;
+            /* padding: 10px; */
         }
 
         .mouse {
             width: 150px;
-            height: 150px;
-            margin: 70px auto 0px auto;
+            height: 100px;
+            margin: 0px auto;
         }
 
         .envelope {
-            margin: 150px auto 0px auto;
+            margin: 0px auto;
         }
     }
 </style>
@@ -115,18 +117,22 @@
     </script>
     <div class="letter-close">
         <div class="envelope"></div>
-        <h2 class="envelope-msg">Merry - Christmas !</h2>
+        <h2 class="envelope-msg">
+            두근-두근-☆</h2>
     </div>
     <div class="letter-open">
         <div class="mouse" onclick="go_jae()"></div>
-        <h1>메리-크리스마스-!</h1>
+        <h1><font color=red>메</font><font color=green>리</font>-<font color=red>크</font><font color=green>리</font><font color=red>스</font><font color=green>마</font><font color=red>스</font>-!</h1>
         <div class="messagebox">
             To 소중한 나의 친구<br>
             <br>
-            발로란트 들어와<br>
+            2022년 한 해 동안 고생많았어,<br>
+            다가올 2023년 한 해도<br>
+            잘 부탁할게~~!!<br>
+            앗, 그리고 제일 중요한 거<br>
             <br>
-            <br>
-            <br>
+            ☆ 나랑 같이 발로란트 허쉴?? ☆<br>
+            <p class="from">𝔐𝔢𝔯𝔯𝔶 ℭ𝔥𝔯𝔦𝔰𝔱𝔪𝔞𝔰</p>
             <p class="from">From 재건님</p>
         </div>
     </div>
@@ -139,8 +145,8 @@
             letterOpen.style.display = "block";
         };
         function go_jae() {
-            alert('어캐 찾았누');
-            window.location.href = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxpP9og8MzXStuy0hN0JJBqiCW2hh6UN2RAg&usqp=CAU';
+            alert('발로란트 지금바로 다운로드');
+            window.location.href = 'https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt6c836cd6611cf737/62686a639c6487661a041fde/Valorant_2022_E4A3_PlayVALORANT_ContentStackThumbnail_1200x625_MB01.png';
         }
     </script>
 </body>
